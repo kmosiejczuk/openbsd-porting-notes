@@ -1,0 +1,17 @@
+Trying to transplant this onto graphics/pcl and possibly others that
+use cmake and are failing complaining about things found in libstdc++fs
+
+Looking at the work that thfr@ did to get graphics/glslang working
+for sparc64.  It uses cmake and needs libstdc++fs for ports-gcc to
+work.
+
+(thfr uses SUBST_VARIABLES with ADDITIONAL LIBRARIES and patches one of
+the instances of CMakeLists.txt)
+
+Other ports of potential interest:
+
+graphics/glslang
+graphics/openexr
+graphics/shaderc
+graphics/spirv-tools
+
