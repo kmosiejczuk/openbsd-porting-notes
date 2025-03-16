@@ -1,0 +1,9 @@
+# Not sure if this is needed any more
+# 
+# The trick is, this was because -fdeclspec did _not_ work with gcc/ports-gcc
+#
+.if ${PROPERTIES:Mclang}
+# needed for ruby 3 on llvm
+CFLAGS+=	-fdeclspec
+.endif
+

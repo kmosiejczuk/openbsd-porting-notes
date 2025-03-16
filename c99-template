@@ -1,0 +1,9 @@
+# This should be obsolete now since base-gcc was made to default to
+# gnu99. It used to be needed for some software that used c99
+# constructs but didn't need full ports-gcc
+
+.include <bsd.port.arch.mk>
+.if !${PROPERTIES:Mclang}
+CFLAGS +=	-std=gnu99
+.endif
+
